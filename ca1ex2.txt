@@ -1,0 +1,19 @@
+git config --global user.name "John Doe"
+git config --global user.email "johndoe@example.com"
+git config --global core.autocrlf false
+git --version
+git branch -master main
+git init ca1-ex2
+echo '*.txt' > .gitignore
+git add .
+git commit -m "Initial commit with required files"
+git switch -c feature-login
+git add app.py
+git commit -m "Added login feature in progress message"
+git switch main
+git add app.py
+git commit -m "Main branch change added to app.py"
+git merge feature-login
+git add app.py
+git commit -m"Finalise app.py with required output"
+Respository link: git remote add origin https://github.com/Ridowu215256/ca1ex2-repo
